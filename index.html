@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arwa Khalil</title>
+  <link rel="icon" type="image/png" href="assets/Gemini_Generated_Image_po0046po0046po00__2_-removebg-preview.png" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js" defer></script>
+  <style>
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee {
+      display: inline-flex;
+      width: 200%;
+      animation: marquee 20s linear infinite;
+    }
+  </style>
+</head>
+
+<body class="font-[Playfair_Display] text-white">
+
+  <!-- Scroll to top button -->
+  <button id="scrollTopBtn"
+    class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full border border-orange-500 bg-orange-500 hover:bg-black text-white shadow-lg transition duration-300 flex items-center justify-center z-50">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <section
+    class="h-[100vh] bg-cover bg-center bg-[url(assets/particle-burst-golden-sparkle-shimmer-background-illustration.JPG)]">
+    <nav
+      class="flex justify-between px-[25px] lg:justify-between items-center lg:px-[150px] py-[10px] text-[20px] bg-transparent border-b border-gray-600">
+      <!-- <h1 class="text-[40px]">Arwa</h1> -->
+      <img width="250px" src="assets/Gemini_Generated_Image_po0046po0046po00-removebg-preview.png" alt="" />
+      <ul class="hidden lg:flex gap-[25px]">
+        <li class="transition 0.5s ease-in-out hover:text-gray-300">
+          <a href="#">Home</a>
+        </li>
+        <li class="transition 0.5s ease-in-out hover:text-gray-300">
+          <a href="#aboutMe">About Me</a>
+        </li>
+        <li class="transition 0.5s ease-in-out hover:text-gray-300">
+          <a href="#services">Services</a>
+        </li>
+        <li class="transition 0.5s ease-in-out hover:text-gray-300">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+
+        <li class="transition 0.5s ease-in-out hover:text-gray-300">
+          <a href="#contact">Contact Us</a>
+        </li>
+      </ul>
+      <div onclick="offsideMenu()" class="lg:hidden cursor-pointer text-white text-[30px]">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <button
+        class="hidden sm:block rounded-sm bg-orange-500 px-[20px] py-[8px] text-[18px] transition duration-500 ease-in-out border border-orange-500 hover:bg-black hover:border-white">
+        <a href="https://www.linkedin.com/in/arwa-ahmed-khalil-a55b09198/">Let's Connect</a>
+      </button>
+    </nav>
+
+    <!-- Off-canvas Menu -->
+    <div id="offside-menu"
+      class="fixed top-0 right-0 h-full w-[80%] max-w-[300px] bg-stone-900 shadow-lg z-50 transition-transform duration-300 ease-in-out lg:hidden">
+      <div class="flex justify-between p-5">
+        <img width="80px" src="assets/Gemini_Generated_Image_po0046po0046po00__2_-removebg-preview.png" alt="" />
+        <i class="fa-solid fa-xmark text-white text-[30px] cursor-pointer" onclick="offsideMenu()"></i>
+      </div>
+      <ul class="flex flex-col gap-5 p-5 text-[22px]">
+        <li class="border-b border-orange-500 hover:text-orange-500 pb-2">
+          <a href="#">Home</a>
+        </li>
+        <li class="border-b border-orange-500 hover:text-orange-500 pb-2">
+          <a href="#aboutMe">About Me</a>
+        </li>
+        <li class="border-b border-orange-500 hover:text-orange-500 pb-2">
+          <a href="#services">Services</a>
+        </li>
+        <li class="border-b border-orange-500 hover:text-orange-500 pb-2">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="border-b border-orange-500 hover:text-orange-500 pb-2">
+          <a href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="ml-[20px] lg:mx-[150px] mt-[100px]" id="home">
+      <h2 class="text-[20px] lg:text-[30px]">🖐Hello! There</h2>
+      <h1 class="text-[60px] lg:text-[100px]">
+        I'm Arwa <span class="text-orange-500">Khalil</span>
+      </h1>
+      <h1 class="text-[38px] mt-[-10px] md:text-[45px] md:mt-[-25px]">
+        I'm a Full-Stack Developer
+      </h1>
+      <p class="text-[19px] text-gray-300 mt-[10px]">
+        I turns ideas into reliable, real-world web applications — <br> handling everything from backend logic to
+        polished user interfaces.
+      </p>
+      <a href="mailto:arwaahmedkhalil11@gmail.com"
+        class="cursior-pointer rounded-[50px] my-[40px] px-[35px] py-[10px] text-[20px] transition 0.5s ease-in-out bg-black border border-orange-500 hover:bg-white hover:text-black inline-block">
+        Contact Me
+      </a>
+    </div>
+    <div class="lg:flex hidden md:flex items-center gap-[65px] justify-end me-[50px] my-[30px] text-[20px]">
+      <div class="flex">
+        <h1 class="text-orange-500">Email: </h1>
+        <h2 class="text-gray-300 mx-2">arwaahmedkhalil11@gmail.com</h2>
+      </div>
+      <div class="flex">
+        <h1 class="text-orange-500">Phone: </h1>
+        <h2 class="text-gray-300 mx-2">+201115329697</h2>
+      </div>
+      <div class="flex">
+        <h1 class="text-orange-500">Address: </h1>
+        <h2 class="text-gray-300 mx-2">El-Aqaad,Aswan,Egypt</h2>
+      </div>
+    </div>
+  </section>
+  <!-- ////////////////// -->
+  <section class="text-[30px] md:text-[80px] relative bg-stone-950 overflow-hidden">
+    <div class="whitespace-nowrap animate-marquee flex items-center">
+      <h1 class=" ">Web Development</h1>
+      <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+      <h1>Back-End Development</h1>
+      <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+        <h1>Full-Stack Development</h1>
+        <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+      <h1>Front-End Development</h1>
+      <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+
+
+      <h1>Wordpress Development</h1>
+      <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+
+      <div class="flex items-center gap-10 ml-10">
+        <h1>Web Development</h1>
+        <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+        <h1>Back-End Development</h1>
+        <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+        <h1>Full-Stack Development</h1>
+        <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+        <h1>Front-End Development</h1>
+        <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+        <h1>WordPress Development</h1>
+        <span class="text-[70px] px-[20px] lg:text-[130px] lg:px-[40px]">*</span>
+      </div>
+    </div>
+  </section>
+  <!-- //////////////// -->
+  <section id="aboutMe" class="lg:flex justify-center items-center py-[30px] gap-[100px] bg-black">
+    <div data-aos="fade-up">
+      <img class="rounded-xl" width="500px"
+        src="assets/portrait-futuristic-female-humanoid-with-advanced-technology.jpg" alt="" />
+    </div>
+    <div class="p-[20px] md:w-[700px]" data-aos="fade-up">
+      <h3 class="text-orange-500 text-[25px] mb-[15px]">About Me</h3>
+      <h1 class="text-[35px] leading-10 md:text-[47px] md:leading-13">
+        I’m a Full-Stack Developer from Aswan, Egypt,
+        with hands-on experience building real-world web applications.
+      </h1>
+      <p class="text-[17px] text-gray-300 mt-[25px]">
+        I work across the full development cycle — from designing APIs and database structures to building responsive
+        frontends and integrating third-party services.
+
+        I’ve developed custom WordPress plugins, implemented media upload systems using Cloudflare R2, and worked with
+        video streaming technologies like HLS. I focus on writing clean, maintainable code and solving practical
+        problems that appear in real production environments.
+      </p>
+      <div class="flex justify-center gap-[100px] mt-[50px]">
+        <div class="border-t border-gray-600 py-[15px] w-[280px]">
+          <h1 class="text-[50px]">100%</h1>
+          <h1 class="text-gray-300">CLIENTS SATISFACTION</h1>
+        </div>
+        <div class="border-t border-gray-600 py-[20px] w-[280px]">
+          <h1 class="text-[50px]">10</h1>
+          <h1 class="text-gray-300">PROJECTS COMPLETED</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //////////////////// -->
+
+  <section class="bg-black py-[100px]" id="services">
+    <div class="mx-[30px] md:flex items-center justify-between xl:mx-[150px]">
+      <div>
+        <h1 class="text-orange-500 text-[20px] md:mb-[-10px]">
+          MY SPECIALIZE
+        </h1>
+        <h1 class="text-[40px] md:text-[60px]">FEATURED SERVICES.</h1>
+      </div>
+      <button
+        class="border border-orange-500 rounded-[50px] cursior-pointer bg-transparent py-[7px] px-[20px] transition 0.5s ease-in-out hover:bg-white hover:text-black">
+        View All
+      </button>
+    </div>
+    <div class="mx-[50px] lg:flex justify-center gap-[60px] my-[40px] xl:mx-[150px]">
+      <div class="my-[20px] bg-stone-900 px-[20px] py-[40px] rounded-xl" data-aos="fade-up">
+        <i class="fa-solid fa-cubes text-[60px] text-orange-500"></i>
+        <h1 class="text-[40px] my-[20px]">Backend & API Development</h1>
+        <span class="border border-white rounded-[50px] py-[5px] px-[10px]">APIs</span>
+        <span class="border border-white rounded-[50px] py-[5px] px-[10px]">Authentication systems</span>
+        <p class="text-[20px] my-[20px]">
+          I build secure, scalable backends and RESTful APIs using .NET & PHP.
+        </p>
+        <button
+          class="bg-black rounded-[50px] cursior-pointer text-[18px] px-[10px] py-[5px] transition 0.5s ease-in-out hover:bg-orange-500">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="my-[20px] bg-stone-900 px-[20px] py-[40px] rounded-xl" data-aos="fade-up">
+        <i class="fa-solid fa-cubes text-[60px] text-orange-500"></i>
+        <h1 class="text-[40px] my-[20px]">Full-Stack Web Development</h1>
+        <span class="border border-white rounded-[50px] py-[5px] px-[10px]">Angular frontends</span>
+        <span class="border border-white rounded-[50px] py-[5px] px-[10px]">End-to-end systems</span>
+        <p class="text-[20px] my-[20px]">
+          I develop complete secure web applications from frontend to backend.
+        </p>
+        <button
+          class="bg-black rounded-[50px] cursior-pointer text-[18px] px-[10px] py-[5px] transition 0.5s ease-in-out hover:bg-orange-500">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="my-[20px] bg-stone-900 px-[20px] py-[40px] rounded-xl" data-aos="fade-up">
+        <i class="fa-solid fa-cubes text-[60px] text-orange-500"></i>
+        <h1 class="text-[40px] my-[20px]">WordPress & Custom Plugins</h1>
+        <span class="border border-white rounded-[50px] py-[5px] px-[10px]">Custom plugins</span>
+        <span class="border border-white rounded-[50px] py-[5px] px-[10px]">Development</span>
+        <p class="text-[20px] my-[20px]">
+          I create custom WordPress plugins and advanced features beyond themes
+        </p>
+        <button
+          class="bg-black rounded-[50px] cursior-pointer text-[18px] px-[10px] py-[5px] transition 0.5s ease-in-out hover:bg-orange-500">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- ///////////////////// -->
+
+  <div class="px-[30px] md:flex items-center justify-between xl:px-[150px] bg-black">
+    <div>
+      <h1 class="text-orange-500 text-[20px] md:mb-[-10px]">MY PORTFOLIO</h1>
+      <h1 class="text-[40px] md:text-[60px]">SELECTED WORKS.</h1>
+    </div>
+    <button
+      class="border border-orange-500 rounded-[50px] cursior-pointer bg-transparent py-[7px] px-[20px] transition 0.5s ease-in-out hover:bg-white hover:text-black">
+      View All
+    </button>
+  </div>
+
+  <section class="stack-section bg-black py-[100px]" id="portfolio">
+    <div id="target-section" class="stack-container cards h-[100vh] lg:h-[80vh] relative overflow-hidden">
+      <div id="1" data-aos="fade-up"
+        class=" card-1 absolute z-10 bg-stone-950 rounded-xl border border-stone-900 mx-[10px] md:mx-[100px] lg:mx-[150px] my-[30px] lg:w-[80%] lg:h-[70vh]">
+        <div class="lg:flex justify-between p-[20px]">
+          <div class="pt-[20px] pl-[20px]">
+            <span class="border border-white rounded-[50px] py-[5px] px-[15px] mr-[10px] mb-[50px]">Full-Stack</span>
+            <span class="border border-white rounded-[50px] py-[5px] px-[15px]">API & Database</span>
+            <h1 class="text-[50px] mt-[10px]">Shefay<span class="text-[23px]"> – Smart Pharmacy System</span></h1>
+            <p class="text-[19px] w-[400px] mt-[10px]">
+              Shefay is a full-stack Smart Pharmacy system designed to manage pharmacy operations digitally.
+              I worked on building backend APIs, database structure, and integrating frontend functionality to handle
+              medicines, orders, and pharmacy workflows efficiently. The project focuses on clean architecture,
+              real-world data handling, and scalable backend logic suitable for production use.
+            </p>
+            <button class="text-orange-500 underline cursior-pointer text-[19px] mt-[35px]">
+              View Details
+            </button>
+          </div>
+          <div>
+            <img class="rounded-xl" width="730px"
+              src="assets/SmartPharmacy-Intelligent-Healthcare-Solutions-01-23-2026_08_03_PM.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="2"
+        class="lg:w-[80%] lg:h-[70vh] card absolute z-20 bg-stone-950 rounded-xl border border-stone-900 mx-[10px] md:mx-[100px] lg:mx-[150px] my-[30px]">
+        <div class="lg:flex justify-between p-[20px]">
+          <div class="pt-[20px] pl-[20px]">
+            <span class="border border-white rounded-[50px] py-[5px] px-[15px] mr-[10px]">Backend</span>
+            <span class="border border-white rounded-[50px] py-[5px] px-[15px]">Media & Storage</span>
+            <h1 class="text-[40px] mt-[10px]">Cloudflare <span class="text-[20px]">R2 Media Upload System</span></h1>
+            <p class="text-[19px] w-[400px] mt-[10px]">
+              A backend-driven media upload system built to handle images, audio, and video files using Cloudflare R2.
+              I implemented secure upload logic, file organization by date, and database tracking, with support for
+              video processing and HLS-ready workflows. The system is designed for performance, scalability, and
+              reliable file management.
+            </p>
+            <button class="text-orange-500 cursior-pointer underline text-[19px] mt-[35px]">
+              View Details
+            </button>
+          </div>
+          <div>
+            <img class="rounded-xl" width="730px"
+              src="https://webfolio1.themescamp.com/personal/wp-content/uploads/sites/5/2024/01/1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="3"
+        class="lg:w-[80%] lg:h-[70vh] card absolute z-30 bg-stone-950 rounded-xl border border-stone-900 mx-[10px] md:mx-[100px] lg:mx-[150px] my-[30px]">
+        <div class="lg:flex justify-between p-[20px]">
+          <div class="pt-[20px] pl-[20px]">
+            <span class="border border-white rounded-[50px] py-[5px] px-[15px] mr-[10px]">Full-Stack</span>
+            <span class="border border-white rounded-[50px] py-[5px] px-[15px]">API</span>
+            <h1 class="text-[40px] mt-[10px]">Full-Stack <span class="text-[25px]">Web Application</span></h1>
+            <p class="text-[19px] w-[400px] mt-[10px]">
+              A complete web application built from backend to frontend, focusing on structured APIs, database design,
+              and responsive user interfaces.
+              The project demonstrates end-to-end development, including authentication, data validation, and clean
+              separation between frontend and backend layers.
+            </p>
+            <button class="text-orange-500 underline text-[19px] mt-[35px]">
+              View Details
+            </button>
+          </div>
+          <div>
+            <img class="rounded-xl" width="730px" src="assets/E-Commerce-04-23-20250308PM.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="4"
+        class="lg:w-[80%] lg:h-[70vh] card absolute z-40 bg-stone-950 rounded-xl border border-stone-900 mx-[10px] md:mx-[100px] lg:mx-[150px] my-[30px]">
+        <div class="lg:flex justify-between p-[20px]">
+          <div class="pt-[20px] pl-[20px]">
+            <span class="border border-white rounded-[50px] py-[5px] px-[15px] mr-[10px]">WordPress</span>
+            <span class="border border-white rounded-[50px] py-[5px] px-[15px]">Custom Plugin</span>
+            <h1 class="text-[35px] mt-[10px]">Custom WordPress Plugins</h1>
+            <p class="text-[19px] w-[400px] mt-[10px]">
+              A custom WordPress plugin developed to extend media handling beyond default WordPress capabilities.
+              I built frontend and admin upload interfaces, integrated Cloudflare R2 storage, prevented duplicate
+              uploads, and implemented media management features such as listing, pagination, and deletion directly from
+              the dashboard.
+            </p>
+            <button class="text-orange-500 cursior-pointer underline text-[19px] mt-[35px]">
+              View Details
+            </button>
+          </div>
+          <div>
+            <img class="rounded-xl" width="730px" src="assets/Auto-Tuning-Center-05-26-20251034PM.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ///////////////////////// -->
+
+  <section class="bg-black pb-[150px] relative">
+    <hr class="text-gray-500" />
+    <div
+      class="absolute top-[-30px] md:top-[-15px] left-1/2 -translate-x-1/2 bg-black border border-gray-500 text-center w-fit py-[5px] px-[20px] rounded-[50px]">
+      <h1>More than 50+ customers trusted us worldwide</h1>
+    </div>
+  </section>
+
+  <section
+    class="bg-black lg:bg-[radial-gradient(ellipse_at_bottom,_theme(colors.orange.600),_transparent_45%)] text-center lg:px-[150px] pb-[130px]">
+    <h1 class="text-[35px] md:text-[50px] leading-13">
+      These are the technologies I work with daily to build<br />
+      <span class="text-orange-500"> scalable, production-ready web applications.</span>
+    </h1>
+
+    <div class="flex flex-wrap justify-center gap-[30px] lg:justify-between mt-[100px]">
+      <div>
+        <div
+          class="border border-gray-400 rounded-[100px] flex flex-col justify-center items-center w-[180px] h-[290px]">
+          <div class="w-[130px] h-[130px] flex flex-col justify-center items-center rounded-[50%] bg-stone-900">
+            <img width="90px" src="https://webfolio1.themescamp.com/personal/wp-content/uploads/sites/5/2024/01/s2.png"
+              alt="" class="" />
+          </div>
+
+          <h1 class="text-[30px] mt-[30px]">95%</h1>
+        </div>
+        <h1 class="text-[30px] mt-[20px]">.NET / C#</h1>
+      </div>
+      <div>
+        <div
+          class="border border-gray-400 rounded-[100px] flex flex-col justify-center items-center w-[180px] h-[290px]">
+          <div class="w-[130px] h-[130px] flex flex-col justify-center items-center rounded-[50%] bg-stone-900">
+            <img width="90px" src="https://webfolio1.themescamp.com/personal/wp-content/uploads/sites/5/2024/01/s6.png"
+              alt="" class="" />
+          </div>
+
+          <h1 class="text-[30px] mt-[30px]">85%</h1>
+        </div>
+        <h1 class="text-[30px] mt-[20px]">Angular</h1>
+      </div>
+      <div>
+        <div
+          class="border border-gray-400 rounded-[100px] flex flex-col justify-center items-center w-[180px] h-[290px]">
+          <div class="w-[130px] h-[130px] flex flex-col justify-center items-center rounded-[50%] bg-stone-900">
+            <img width="90px" src="https://webfolio1.themescamp.com/personal/wp-content/uploads/sites/5/2024/01/s5.png"
+              alt="" class="" />
+          </div>
+
+          <h1 class="text-[30px] mt-[30px]">95%</h1>
+        </div>
+        <h1 class="text-[30px] mt-[20px]">RESTful APIs</h1>
+      </div>
+      <div>
+        <div
+          class="border border-gray-400 rounded-[100px] flex flex-col justify-center items-center w-[180px] h-[290px]">
+          <div class="w-[130px] h-[130px] flex flex-col justify-center items-center rounded-[50%] bg-stone-900">
+            <img width="90px" src="http://webfolio1.themescamp.com/personal/wp-content/uploads/sites/5/2024/01/s4.png"
+              alt="" class="" />
+          </div>
+
+          <h1 class="text-[30px] mt-[30px]">90%</h1>
+        </div>
+        <h1 class="text-[30px] mt-[20px]">WordPress / PHP</h1>
+      </div>
+      <div>
+        <div
+          class="border border-gray-400 rounded-[100px] flex flex-col justify-center items-center w-[180px] h-[290px]">
+          <div class="w-[130px] h-[130px] flex flex-col justify-center items-center rounded-[50%] bg-stone-900">
+            <img width="90px" src="https://webfolio1.themescamp.com/personal/wp-content/uploads/sites/5/2024/01/s1.png"
+              alt="" class="" />
+          </div>
+
+          <h1 class="text-[30px] mt-[30px]">90%</h1>
+        </div>
+        <h1 class="text-[30px] mt-[20px]">SQL Server</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- /////////////////// -->
+
+  <div class="px-[30px] md:flex items-center justify-between xl:px-[150px] py-[70px] bg-black">
+    <div>
+      <h1 class="text-orange-500 text-[20px] md:mb-[-10px]">TESTIMONIALS</h1>
+      <h1 class="text-[39px] md:text-[40px] md:text-[60px]">
+        TRUSTED BY CLIENTS.
+      </h1>
+    </div>
+  </div>
+
+  <section class="px-[30px] lg:flex justify-between gap-10 items-center lg:px-[150px] pb-[100px] bg-black">
+    <div class="border border-gray-600 rounded-[20px] mb-[15px]">
+      <h1 class="px-[30px] text-[23px] my-[20px] text-orange-500">
+        DESIGN QUALITY
+      </h1>
+      <p class="px-[30px] mb-[30px] text-[18px]">
+        أروى شكرًا من القلب على تسليم موقعي الشخصي بالشكل اللي كنت أتمناه وأكثر. التصميم أنيق، التفاصيل مدروسة، والتنفيذ
+        احترافي جدًا. فعلاً كنتِ على قد الثقة وأبدعتِ بكل معنى الكلمة. ممتن لكِ جدًا على هذا الشغل الراقي
+
+
+      </p>
+      <div class="border-t border-gray-600 rounded-t-[20px] px-[30px] py-[15px]">
+        <h1 class="text-[20px]">Amir</h1>
+        <p class="text-gray-400">Customer</p>
+      </div>
+    </div>
+    <div class="border border-gray-600 rounded-[20px] mb-[15px]">
+      <h1 class="px-[30px] text-[23px] my-[20px] text-orange-500">
+        DESIGN QUALITY
+      </h1>
+      <p class="px-[30px] mb-[30px] text-[18px]">
+        خدمة رائعة وتعامل راقي، متعاونة وسريعة في إنجاز العمل. أنصح بشدة بالتعامل معها.
+        احترافية عالية في الشغل ،متعاونة جدا ،اشجع على التعامل معها ماشاء الله ،تعاملها راقي جدا
+
+      </p>
+      <div class="border-t border-gray-600 rounded-t-[20px] px-[30px] py-[15px]">
+        <h1 class="text-[20px]">Yazeed</h1>
+        <p class="text-gray-400">Customer</p>
+      </div>
+    </div>
+    <div class="border border-gray-600 rounded-[20px] mb-[15px]">
+      <h1 class="px-[30px] text-[23px] my-[20px] text-orange-500">
+        DESIGN QUALITY
+      </h1>
+      <p class="px-[30px] mb-[30px] text-[18px]">
+        أحب أشكر المصممة المبدعة أروى على تسليم مشروع الموقع الخاص بشركتي بكل احترافية. شغل متقن، تعاون رائع، والتزام
+        بالمواعيد – فعلاً كان تعامل مريح ونتيجة تفوق التوقعات. شكراً لكِ أروى على هذا الإنجاز المميز
+
+      </p>
+      <div class="border-t border-gray-600 rounded-t-[20px] px-[30px] py-[15px]">
+        <h1 class="text-[20px]">Ali</h1>
+        <p class="text-gray-400">Customer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- //////////////////////// -->
+
+  <footer id="contact"
+    class="bg-black p-8 md:p-16 bg-[radial-gradient(ellipse_at_bottom_right,_theme(colors.orange.600),_transparent_50%)]">
+    <div class="mx-[20px] lg:mx-[150px]">
+      <div class="flex flex-col md:flex-row justify-between mb-8 md:mb-12 space-y-8 md:space-y-0">
+        <div class="flex flex-col items-start md:w-1/4">
+          <!-- <h1 class="text-[30px] md:text-[40px] font-bold text-orange-500">
+              Arwa
+            </h1> -->
+          <img class="w-[150px] md:w-[200px]"
+            src="assets/Gemini_Generated_Image_po0046po0046po00__2_-removebg-preview.png" alt="" />
+        </div>
+
+        <div class="md:w-1/4 space-y-4">
+          <h2 class="text-lg font-bold mb-2">CONTACT</h2>
+          <p class="text-gray-400">El-Aqaad,Aswan,Egypt</p>
+          <p class="text-gray-400">arwaahmedkhalil11@gmail.com</p>
+          <p class="text-orange-500 hover:text-orange-600 transition-colors cursor-pointer">
+            +201115329697
+          </p>
+        </div>
+
+        <div class="md:w-1/4 space-y-2">
+          <h2 class="text-lg font-bold mb-2">USEFUL LINKS</h2>
+          <ul class="text-gray-400 space-y-1">
+            <li>
+              <a href="#" class="hover:text-white transition-colors">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">Services</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:w-1/4 space-y-4">
+          <h2 class="text-lg font-bold mb-2">NEWSLETTER</h2>
+          <div class="relative">
+            <input type="email" placeholder="Your Email"
+              class="bg-transparent border-b border-gray-600 focus:outline-none focus:border-orange-500 w-full p-2 text-white" />
+          </div>
+          <div class="flex space-x-4 mt-4">
+            <a href="https://www.facebook.com/arwa.ahmed.9465/"
+              class="border border-gray-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arwa-ahmed-khalil-a55b09198/"
+              class="border border-gray-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/arwa__khalil/"
+              class="border border-gray-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Arwa-Khalil"
+              class="border border-gray-600 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-gray-800 mb-8" />
+
+      <div class="text-center text-gray-500 text-sm">
+        <p>
+          &copy; 2025 PORTFOLIO Is Proudly made by
+          <a href="#" class="text-orange-500 hover:underline">Arwa Khalil</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+
+</html>

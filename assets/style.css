@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#offside-menu {
+  transform: translateX(100%);
+}
+
+#offside-menu.active {
+  transform: translateX(0);
+}
+
+/* ================== */
+
+/* .card {
+  transform: translateY(110%);
+} */
+.stack-section {
+  height: 510vh; 
+}
+
+.stack-container {
+  position: sticky;
+  top: 0;
+}
+
+.card {
+  transform: translateY(125%);
+  transition: transform 0.3s ease-out;
+}
+

@@ -211,3 +211,65 @@ html {
   }
 }
 
+/* ================== TECHNOLOGIES/SKILLS SECTION ================== */
+
+/* Mobile: 2 items per row */
+@media (max-width: 768px) {
+  .tech-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    max-width: 380px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 40px !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    padding: 0 10px;
+  }
+
+  /* Adjust individual tech items for mobile */
+  .tech-grid > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-grid > div > div {
+    width: 140px !important;
+    height: 240px !important;
+  }
+
+  .tech-grid > div > div > div {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .tech-grid > div > h1 {
+    font-size: 20px !important;
+    margin-top: 15px !important;
+  }
+
+  /* Center the 5th item and make it span full width */
+  .tech-grid > div:nth-child(5) {
+    grid-column: 1 / -1;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet and larger: flex layout */
+@media (min-width: 769px) {
+  .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .tech-grid > div:nth-child(5) {
+    flex-basis: auto;
+  }
+}
+

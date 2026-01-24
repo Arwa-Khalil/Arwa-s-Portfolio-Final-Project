@@ -60,13 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelector(".stack-section");
-  const cards = Array.from(section.querySelectorAll(".card-1 , .card")); // includes your first special class
+  const cards = Array.from(section.querySelectorAll(".card-1 , .card"));
   const vh = window.innerHeight;
 
-  window.addEventListener("scroll", () => {
+  const animateCards = () => {
     const rect = section.getBoundingClientRect();
-    const scrollY = -rect.top; // scrolled distance inside section
-    const step = vh; // each card animates in one viewport height
+    const scrollY = -rect.top;
+    const step = vh;
 
     cards.forEach((card, i) => {
       const start = step * i;
@@ -75,27 +75,28 @@ document.addEventListener("DOMContentLoaded", () => {
       if (i === 0) {
         // First card: only scale
         if (scrollY <= end) {
-          const progress = Math.max(0, Math.min(1, scrollY / step)); // clamp 0–1
-          const scale = 1 - progress * 0.1; // 1 → 0.9
+          const progress = Math.max(0, Math.min(1, scrollY / step));
+          const scale = 1 - progress * 0.1;
           card.style.transform = `scale(${scale})`;
         } else {
           card.style.transform = "scale(0.9)";
         }
       } else {
-      
-
-      if (scrollY >= start && scrollY <= end) {
-        const progress = (scrollY - start) / step; // 0 → 1
-        const scale = 1 - progress * 0.1; // 1 → 0.9 as it gets covered
-        card.style.transform = `translateY(${(1 - progress) * 100}%) scale(${scale})`; // move into place
-      } else if (scrollY > end) {
-        card.style.transform = "translateY(0%) scale(0.9)";
-      } else {
-        card.style.transform = "translateY(125%) scale(0.9)";
+        if (scrollY >= start && scrollY <= end) {
+          const progress = (scrollY - start) / step;
+          const scale = 1 - progress * 0.1;
+          card.style.transform = `translateY(${(1 - progress) * 100}%) scale(${scale})`;
+        } else if (scrollY > end) {
+          card.style.transform = "translateY(0%) scale(0.9)";
+        } else {
+          card.style.transform = "translateY(125%) scale(0.9)";
+        }
       }
-    }
     });
-  });
+  };
+
+  // Handle scroll event with smooth animation
+  window.addEventListener("scroll", animateCards, { passive: true });
 });
 
 
